@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta http-equiv="refresh" content="30"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!------Background css-------->
+    <link rel="stylesheet" href="css/gradient.css" />
+    <title>Kanban</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row navbar " style="background-color: rgb(249, 249, 249);">
+            <div class="col-fhd-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 ">
+                <h5 style="font-size: 25px;" id="currentDate"></h5>
+            </div>
+            <div class="col-fhd-6 col-lg-4 col-md-6 col-sm-6 col-xs-6 text-center machine" id="get-machine">
+                <h3 style="color:rgb(17, 15, 15)">eKANBAN STATUS</h3>
+            </div>
+            <div class="col-fhd-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
+                <b><img src="img/download.png" class="img-responsive" style="height:45px ; width:200px"></b>
+                <h6 id="currentDate" style="font-size:20px"><b></b></h6>
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid" id="dashboard-card">
+            <div class="row">
+                <div class="col-sm-12">
+                    <table class="table table-bordered table-dark">
+                        <thead>
+                            <tr>
+                                <th class="headclass" ></th>
+                                <td id="area-1" class="headclass">PDI</td>
+                                <td id="area-2" class="headclass">SuperMarket</td>
+                                <td id="area-3" class="headclass">AutoAssembly</td>
+                            </tr>
+                            <tr>
+                                <th class="NameClasss">Planned Stock</th>
+                                <td id="ps-1" class="stylefonts">0</td>
+                                <td id="ps-2" class="stylefonts">0</td>
+                                <td id="ps-3" class="stylefonts">0</td>
+                            </tr>
+                            <tr>
+                                <th class="NameClass">Available Stock in Quantity</th>
+                                <td id="sq-1" class="stylefont">0</td>
+                                <td id="sq-2" class="stylefont">0</td>
+                                <td id="sq-3" class="stylefont">0</td>
+                            </tr>
+                            <tr>
+                                <th class="NameClasss">Available stock in Trolley count</th>
+                                <td id="stc-1" class="stylefonts">0</td>
+                                <td id="stc-2" class="stylefonts">0</td>
+                                <td id="stc-3" class="stylefonts">0</td>
+                            </tr>
+                            <tr>
+                                <th class="NameClass">Number of cards to be moved</th>
+                                <td id="mc-1" class="stylefont">0</td>
+                                <td id="mc-2" class="stylefont">0</td>
+                                <td id="mc-3" class="stylefont">0</td>
+                            </tr>
+                            <tr>
+                                <th class="NameClasss">Number of cards to be received</th>
+                                <td id="rc-1" class="stylefonts">0</td>
+                                <td id="rc-2" class="stylefonts">0</td>
+                                <td id="rc-3" class="stylefonts">0</td>
+                            </tr>
+                            <tr>
+                                <th class="NameClass">Number of Empty Trolleys</th>
+                                <td id="et-1" class="stylefont">0</td>
+                                <td id="et-2" class="stylefont">0</td>
+                                <td id="et-3" class="stylefont">0</td>
+                            </tr>
+
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+<script src="JS/jquery.js"></script>
+<script src="JS/scriptapi.js"></script>
+
+</html>
